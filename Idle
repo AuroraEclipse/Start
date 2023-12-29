@@ -1,0 +1,12 @@
+import pygame
+pygame.init()
+
+running = True
+screen = pygame.display.set_mode((800,600), pygame.FULLSCREEN)
+BGimg = pygame.transform.scale(pygame.image.load('Snowfloor.jfif'), (800,600))
+Pimg = pygame.transform.scale(pygame.image.load('standright001.png'), (100,110))
+
+screen.blit(BGimg, (0,0))
+screen.blit(Pimg, (0,350))
+
+pygame.display.flip()
